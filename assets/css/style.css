@@ -67,7 +67,6 @@ button:hover {
     position: fixed;
     top: 0;
     right: 0;
-
     display: block;
     /*esto porque los button son elemento en linea*/
 }
@@ -91,7 +90,7 @@ button:hover {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-   
+
 }
 
 .header__nav {
@@ -138,7 +137,8 @@ button:hover {
     margin: 0 10px 0 auto;
     /* height: 200px; */
     justify-content: space-between;
-    padding-bottom: 15px;/*le agregue esto para q no tocara el fondo */
+    padding-bottom: 20px;
+    /*le agregue esto para q no tocara el fondo */
     row-gap: 7px;
 }
 
@@ -150,7 +150,8 @@ button:hover {
     border: 1px solid transparent;
     border-radius: 5px;
     transition: 0.4s ease-in-out;
-    justify-content: space-around;/*le agregue esto para q no tocara el fondo */
+    justify-content: space-around;
+    /*le agregue esto para q no tocara el fondo */
 
 }
 
@@ -165,7 +166,7 @@ button:hover {
 
 .hero {
     width: 100%;
-    margin: 0 auto 0 400px;
+
     padding-top: 50px;
 }
 
@@ -174,6 +175,7 @@ button:hover {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin: 0 auto 0 400px;
 }
 
 .hero__img {
@@ -188,13 +190,13 @@ button:hover {
 
 .habs {
     width: 100%;
-    margin: 0 auto 0 400px;
     padding-top: 15px;
 }
 
 .icons__container {
     display: flex;
     flex-wrap: wrap;
+    align-items: baseline;
     /* justify-content: space-evenly; */
 
 }
@@ -207,44 +209,100 @@ button:hover {
     text-align: center;
 }
 
+
+/* FORMACION */
 .formacion {
     width: 100%;
-    margin: 0 auto 0 400px;
+
 }
 
 .servicios {
     width: 100%;
-    margin: 0 auto 0 400px;
+
 }
 
 .proyectos {
     width: 100%;
-    margin: 0 auto 0 400px;
+
 
 }
 
 .formacion__container,
 .servicios__container,
 .proyectos__container,
-.habs__container {
+.habs__container,
+.footer__container {
     max-width: 900px;
     min-width: 300px;
+    margin: 0 auto 0 400px;
 
 }
 
 .cv {
     border: 4px solid greenyellow;
 }
+
 /*PROYECTOS*/
 
-.proyectos__container {
+.card__container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
     gap: 10px;
-
-
-
 }
+
+.porfolio__article {
+    margin: auto;
+}
+
+.article__container img {
+    width: 100%;
+    height: 215px;
+    object-fit: cover;
+}
+
+.article__content {
+    margin: auto;
+}
+
+.article__repositorio {
+    padding-bottom: 5px;
+}
+
+.article__repositorio a {
+    color: var(--color-primary)
+}
+
+.tec__html {
+    border: 2px solid var(--txt-body);
+    background-color: orangered;
+    padding: 2px;
+}
+
+.tec__ccs {
+    border: 2px solid var(--txt-body);
+    background-color: lightblue;
+    padding: 2px;
+}
+
+.tec__js {
+    border: 2px solid var(--txt-body);
+    background-color: rgb(214, 201, 16);
+    padding: 2px;
+}
+
+
+.pie__pagina {
+    width: 100%;
+    padding-top: 20px;
+}
+
+.footer__container {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 20px;
+}
+
+
 @media (max-width: 910px) {
     .header {
         left: 0;
@@ -255,7 +313,8 @@ button:hover {
     .habs,
     .formacion,
     .servicios,
-    .proyectos {
+    .proyectos,
+    .pie__pagina {
         margin: 0 auto 0 200px;
     }
 }
