@@ -36,20 +36,18 @@
                 </div>
                 <div class="nav__menu">
                     <ul>
-                        <li class="nav__menu--link"><a href="#sobreMi">Sobre Mi --</a></li>
-                        <li class="nav__menu--link"><a href="#habilidades">Habilidades --</a></li>
-                        <li class="nav__menu--link"><a href="#formacion">Formacion --</a></li>
-                        <li class="nav__menu--link"><a href="#servicios">Servicios --</a></li>
-                        <li class="nav__menu--link"><a href="#proyectos">Proyectos --</a></li>
+                        <li class="nav__menu--link"><a href="#sobreMi">Sobre Mi </a></li>
+                        <li class="nav__menu--link"><a href="#habilidades">Habilidades </a></li>
+                        <li class="nav__menu--link"><a href="#formacion">Formacion </a></li>
+
+                        <li class="nav__menu--link"><a href="#proyectos">Proyectos </a></li>
+                        <li class="nav__menu--link"><a href="#contacto">Contacto </a></li>
                     </ul>
                 </div>
             </nav>
             <div class="header__redes">
-                <a href="https://www.facebook.com/hider.rojasmoya/" class="redes--link"><i
-                        class="fa-brands fa-facebook"></i></a>
-                <a href="#" class="redes--link"><i class="fa-solid fa-at"></i></a>
-                <a href="#" class="redes--link"><i class="fa-brands fa-linkedin"></i></a>
-                <a href="https://github.com/Der0310" class="redes--link"><i class="fa-brands fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/hider-rojas-1b9b7634/" class="redes--link" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://github.com/Der0310" class="redes--link" target="_blank"><i class="fa-brands fa-github"></i></a>
             </div>
         </div>
     </header>
@@ -57,8 +55,9 @@
     <!--este es la seccion del hero-->
     <main id="sobreMi" class="hero">
         <div class="container__hero">
+           <div class="container__heroimg"> <img src="assets\imgs\matrix.jpg" alt="fondo"></div>
             <div class="hero__title">
-                <h1>Portafolio del Desarrollador Hider Rojas</h1>
+                <h1>Dev. Hider Rojas</h1>
             </div>
             <div class="hero__img">
                 <img src="assets\imgs\Hider Visa (1) (1).jpg" alt="Hider's foto">
@@ -75,12 +74,12 @@
         </div>
     </main>
 
-    <!--todo esto se debe mejorar-->
-
     <section id="habilidades" class="habs">
         <div class="habs__container">
+            <a href="assets\files\Hider Rojas Human Friendly CV Resume.pdf" download="Hider_CV.pdf" target="_blank">
+                <button class="cv">Descarga mi CV</button>
+            </a>
 
-            <button class="cv">Descarga mi CV</button>
 
             <h2>Habilidades</h2>
 
@@ -132,24 +131,25 @@
     <section id="formacion" class="formacion">
         <div class="formacion__container">
             <h2>Formación</h2>
+            <!-- Slideshow container -->
+            <swiper-container class="mySwiper" navigation="true">
+                <swiper-slide>
+                    <div class="slide_size"><img src="assets\imgs\certificate ACADEMLO Fundamentos.png"
+                            alt="fundamentos"></div>
+                </swiper-slide>
+                <swiper-slide>
+                    <div class="slide_size"><img src="assets\imgs\certificate ACADEMLO React.png" alt="react">
+                    </div>
+                </swiper-slide>
+                <swiper-slide>
+                    <div class="slide_size"><img src="assets\imgs\EF SET Certificate.png" alt="ingles"></div>
+                </swiper-slide>
+            </swiper-container>
 
-            <ul>
-                <li><span>Academlo 2024-2025</span></li>
-
-                <li><span>English C1</span></li>
-            </ul>
 
         </div>
     </section>
 
-    <section id="servicios" class="servicios">
-        <div class="servicios__container">
-            <h2>Servicios</h2>
-
-            <span>Desarrollo Web, Diseño web, Asesorias uno a uno, Gestion de proyectos y Fundraising
-            </span>
-        </div>
-    </section>
 
     <section id="proyectos" class="proyectos">
 
@@ -158,38 +158,34 @@
             <div class="card__container">
                 <article class="portfolio__article">
                     <div class="article__container">
-                        <img src="assets\imgs\Vota-Inteligente-banner-6.webp" alt="votacion">
+                        <a href="https://rick-and-morty-hr.netlify.app" target="_blank">
+                        <img src="assets\imgs\rick-and-morty-portal.jpg" alt="rick&morty"></a>
                     </div>
                     <div class="article__content">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus dolores quos porro
-                            nostrum fugiat obcaecati laborum iure sapiente consequuntur corporis quia illo enim
-                            asperiores
-                            expedita, quis similique aperiam! Laboriosam, deleniti!</p>
+                        <p>En este proyecto puedes buscar los personajes de la serie por numero de mundo y averiguar cuales estan vivos, muertos o se desconoce</p>
                         <div class="article__repositorio">
-                            <a href="#"><i><i class="fa-brands fa-github"></i></i></a>
+                            <a href="https://github.com/Der0310/rick---morty.git" target="_blank"><i><i class="fa-brands fa-github"></i></i></a>
                         </div>
                         <div class="article__tecnologias">
-                            <span class="tec__html">HTML</span> <span class="tec__ccs">CCS</span> <span
-                                class="tec__js">Javascript</span>
+                            <span class="tec__html"><i class="fi fi-brands-html5"></i>HTML</span> <span class="tec__ccs"><i class="fi fi-brands-css3-alt"></i>CCS</span> <span
+                                class="tec__js"><i class="fi fi-brands-js"></i>Javascript</span>
+                                <span class="tec__react"><i class="fi fi-br-react"></i>React</span> 
                         </div>
                     </div>
 
                 </article>
                 <article class="portfolio__article">
                     <div class="article__container">
-                        <img src="assets\imgs\legal AI.PNG" alt="robot legal">
+                       <a href="https://pokedex-hr.netlify.app" target="_blank"> <img src="assets\imgs\pokemon-va6139eg5csznzmw.jpg" alt="pokedex"></a>
                     </div>
                     <div class="article__content">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus dolores quos porro
-                            nostrum fugiat obcaecati laborum iure sapiente consequuntur corporis quia illo enim
-                            asperiores
-                            expedita, quis similique aperiam! Laboriosam, deleniti!</p>
+                        <p>coloca el nombre del entrenador y busca los pokemon por su tipo</p>
                         <div class="article__repositorio">
-                            <a href="#"><i><i class="fa-brands fa-github"></i></i></a>
+                            <a href="https://github.com/Der0310/pokedex-hr.git" target="_blank"><i><i class="fa-brands fa-github"></i></i></a>
                         </div>
                         <div class="article__tecnologias">
                             <span class="tec__html">HTML</span> <span class="tec__ccs">CCS</span> <span
-                                class="tec__js">Javascript</span>
+                                class="tec__js">Javascript</span> <span class="tec__react"><i class="fi fi-br-react"></i>React</span> 
                         </div>
                     </div>
 
@@ -197,42 +193,34 @@
                 </article>
                 <article class="portfolio__article">
                     <div class="article__container">
-                        <img src="assets\imgs\fondo-pension-inversion-bitcoin-Nueva-zelanda.jpg"
-                            alt="fondo soberano con BTC segunda capa">
+                        <a href="https://github.com/Der0310/ecommerce-hr.git" target="_blank"><img src="assets\imgs\ecomerce.jpg"
+                            alt="fondo soberano con BTC segunda capa"></a>
                     </div>
                     <div class="article__content">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus dolores quos porro
-                            nostrum
-                            fugiat obcaecati laborum iure sapiente consequuntur corporis quia illo enim asperiores
-                            expedita,
-                            quis similique aperiam! Laboriosam, deleniti!</p>
+                        <p>Con esta pagina se puede buscar articulos,loggearte con tu usuario, agregar articulos al carrito de compra y generar el recibo de compra</p>
                         <div class="article__repositorio">
                             <a href="#"><i><i class="fa-brands fa-github"></i></i></a>
                         </div>
                         <div class="article__tecnologias">
                             <span class="tec__html">HTML</span> <span class="tec__ccs">CCS</span> <span
-                                class="tec__js">Javascript</span>
+                                class="tec__js">Javascript</span> <span class="tec__react"><i class="fi fi-br-react"></i>React</span> 
                         </div>
                     </div>
 
                 </article>
                 <article class="portfolio__article">
                     <div class="article__container">
-                        <img src="assets\imgs\202990822-lindo-robot-presenta-ramo-de-flores-a-su-ser-querido-creado-con-ai-generativo.jpg"
-                            alt="floristeria personalizada">
+                        <a href="https://galleta-de-la-fortuna-hr.netlify.app" target="_blank"><img src="assets\imgs\galleta de la fortuna.jpg"
+                            alt="galleta de la fortuna"></a>
                     </div>
                     <div class="article__content">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus dolores quos porro
-                            nostrum
-                            fugiat obcaecati laborum iure sapiente consequuntur corporis quia illo enim asperiores
-                            expedita,
-                            quis similique aperiam! Laboriosam, deleniti!</p>
+                        <p>Prueba tu fortuna y recibe mensajes llenos de sabiduria de diversas fuentes bibliograficas que a lo largo de la historia han tenido un impacto en las sociedades</p>
                         <div class="article__repositorio">
-                            <a href="#"><i><i class="fa-brands fa-github"></i></i></a>
+                            <a href="https://github.com/Der0310/galleta-de-la-fortuna.git" target="_blank"><i><i class="fa-brands fa-github"></i></i></a>
                         </div>
                         <div class="article__tecnologias">
                             <span class="tec__html">HTML</span> <span class="tec__ccs">CCS</span> <span
-                                class="tec__js">Javascript</span>
+                                class="tec__js">Javascript</span> <span class="tec__react"><i class="fi fi-br-react"></i>React</span> 
                         </div>
                     </div>
 
@@ -241,14 +229,31 @@
             </div>
         </div>
     </section>
+    <section id="contacto" class="contacto">
+       
+        <div class="contacto__container">
+            <div class="contacto_extracontendor">
+                <h2>Contacto</h2>
 
+                <form  action="https://formspree.io/f/xyzgzedo"
+                method="POST" id="contacto__formulario" class="contacto__formulario">
+                    <input type="text" name="name" placeholder="Tu Nombre">
+                    <input type="email" name='email' placeholder="Dirección de correo">
+                    <input type="text" name="message" placeholder="Tema">
+                    <textarea name="textarea" cols="30" rows="10" placeholder="Mensaje"></textarea>
+                    <button class="send" type="submit" id="submit_btn">Enviar</button>
+
+                </form>
+            </div>
+        </div>
+    </section>
     <footer class="pie__pagina">
         <div class="footer__container">
             <span class="copy">Hider Rojas// 2024 Todos los derechos reservados</span>
 
         </div>
     </footer>
-
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
 </body>
 
 </html>

@@ -48,6 +48,7 @@ button {
     border: 4px solid transparent;
     /*ojo esto para q no se salga el borde*/
     background-color: lightgreen;
+    border-radius: 4px;
     padding: 7px 12px;
     /*sto para q no se vea pegado*/
     color: black;
@@ -152,21 +153,18 @@ button:hover {
     transition: 0.4s ease-in-out;
     justify-content: space-around;
     /*le agregue esto para q no tocara el fondo */
-
 }
 
 .header__redes a:hover {
     color: var(--color-primary);
     background-color: var(--bg-body);
     transform: scale(0.8);
-
 }
 
 /*SOBRE MI*/
 
 .hero {
     width: 100%;
-
     padding-top: 50px;
 }
 
@@ -177,13 +175,19 @@ button:hover {
     align-items: center;
     margin: 0 auto 0 400px;
 }
+.container__heroimg {
+    position: relative;
+}
 
 .hero__img {
-    width: 50%;
+    width: 30%;
+    padding-top: 20px;
+    position: absolute
 }
 
 .hero__img img {
     border-radius: 100%;
+
 }
 
 /*HABILIDADES*/
@@ -192,7 +196,13 @@ button:hover {
     width: 100%;
     padding-top: 15px;
 }
+.habs__container {
+    max-width: 900px;
+    min-width: 300px;
+    margin: 0 auto 0 400px;
+    font-family: inherit;
 
+}
 .icons__container {
     display: flex;
     flex-wrap: wrap;
@@ -209,40 +219,65 @@ button:hover {
     text-align: center;
 }
 
+/*FORMACION*/
 
-/* FORMACION */
 .formacion {
     width: 100%;
-
 }
-
-.servicios {
-    width: 100%;
-
-}
-
-.proyectos {
-    width: 100%;
-
-
-}
-
-.formacion__container,
-.servicios__container,
-.proyectos__container,
-.habs__container,
-.footer__container {
+.formacion__container{
     max-width: 900px;
     min-width: 300px;
     margin: 0 auto 0 400px;
-
 }
+
+swiper-container {
+    /* width: 320px; */
+    height: 450px;
+  }
+
+  swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+
+  .slide_size{
+    height:400px;
+    display: flex;
+    justify-content: center;
+    align-items:center ;
+
+  }
+
 
 .cv {
     border: 4px solid greenyellow;
 }
 
 /*PROYECTOS*/
+
+.proyectos {
+    width: 100%;
+}
+.proyectos__container{
+    
+        max-width: 900px;
+        min-width: 300px;
+        margin: 0 auto 0 400px;
+        font-family: inherit;  
+    
+}
+
 
 .card__container {
     display: grid;
@@ -289,8 +324,55 @@ button:hover {
     background-color: rgb(214, 201, 16);
     padding: 2px;
 }
+.tec__react {
+    border: 2px solid var(--txt-body);
+    background-color: rgb(16, 214, 181);
+    padding: 2px;
+}
 
+  /*CONTACTO*/
+/* contacto{
+    width: 100%;
+    display: flex;
+    align-content: center;
+}
+ */
 
+ .contacto__container{
+    max-width: 900px;
+    min-width: 300px;
+    margin: 0 auto 0 400px;
+    font-family: inherit;
+    
+}
+.contacto__formulario {
+display: flex;
+flex-direction:column;
+gap: 10px;
+/* margin: auto; */
+
+}
+
+.contacto input, textarea {
+display: block;
+width: 100%;
+padding: 10px;
+background-color: azure;
+font-size: 16px;
+border: 0.5px solid;
+border-radius: 5px;
+margin-bottom: 20px;
+font-family: inherit;
+}
+
+/*PIE DE PAGINA*/
+.footer__container {
+    max-width: 900px;
+    min-width: 300px;
+    margin: 0 auto 0 400px;
+    font-family: inherit;
+
+}
 .pie__pagina {
     width: 100%;
     padding-top: 20px;
@@ -312,7 +394,7 @@ button:hover {
     .hero,
     .habs,
     .formacion,
-    .servicios,
+    .contacto,
     .proyectos,
     .pie__pagina {
         margin: 0 auto 0 200px;
