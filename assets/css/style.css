@@ -288,6 +288,10 @@ swiper-container {
 .porfolio__article {
     margin: auto;
 }
+.article__container img:hover {
+    border: solid 2px var(--color-primary)
+}
+
 
 .article__container img {
     width: 100%;
